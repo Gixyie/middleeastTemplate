@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTodoList</title>
+    <link rel="stylesheet" href="style1.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="myDiv" class="header">
+        <div class="containerheader">
+        <h1>Today's Task</h1>
+        <p>Keep it up!</p>
+        <input type="text" id="myInput" placeholder="Add a new task...">
+        <button onclick="newElement()"><i class="ri-add-circle-line"> New Task</i></button>
+    </div>
+    </div>
+   <ul id="myUL">
+    <li>Reviews</li>
+    <li>Gym</li>
+   </ul>
+
+
+   <script>
+    var myNodeList = document.getElementsByTagName("LI");
+    for (var i = 0; i < myNodeList.length; i++) {
+        var span = document.createElement ("SPAN");
+        var txt = document.createTextNode ("\u00D7");
+        span.className = "close";
+        span.appendChild (txt);
+        myNodeList[i].appendChild(span);
+    }
+        var close = document.getElementsByClassName ("close");
+        for (var i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+         
+        var list = document.querySelector ("ul");
+        list.addEventListener ("click", function(ev) {
+            if (ev.target.tagName === "LI") {
+                ev.target.classList.toggle("checked");
+            }
+        }, false);
+
+        function newElement (){
+            var li=document.createElement("LI");
+            var inputValue = document.getElementById("myInput").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+
+            if(inputValue === ""){
+                alert("Devi scrivere qualcosa");
+            }else {
+                document.getElementById("myUL").appendChild(li);
+
+            }
+              document.getElementById("myInput").value = "";
+            
+        for (var i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+    
+   </script>
+</body>
+</html>

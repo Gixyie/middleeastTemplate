@@ -1,0 +1,670 @@
+* {
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 242, 242);
+}
+
+li, a, .icone {
+    font-weight: 200;
+    font-size: 17px;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.menu li{
+    display: inline-flex;
+    padding: 0px 20px;
+    gap: 10px;
+    font-size: 16px;
+}
+.menu li a {
+    padding: 10px;
+    font-weight: 400;
+    transition: all 0.2s ease 0s;
+    letter-spacing: 1.2px;
+    
+    font-size: 16px;
+   
+}
+
+.menu li a:hover {
+    text-decoration: underline yellow 2px;
+    
+}
+.icone i{
+    
+    padding: 6px;
+    gap: 18px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    
+}
+.icone i:hover {
+    font-size: 30px;
+}
+.logo h1{
+  
+    font-size: 60px;
+    letter-spacing: -9.5px;
+    z-index: 5;
+    font-weight: 400;
+}
+
+.presentation{
+    display: flex;
+    padding: 20px 20px;
+    margin: 20px 20px;
+
+}
+.shop{
+    padding: 40px;
+}
+.shop h3{
+  font-size: 48px;
+  color: rgb(118, 106, 106);
+  padding: 0;
+  margin-bottom: 30px;
+}
+.shop li a{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: 30px;
+    letter-spacing: 1.2px;
+    
+}
+.shop li a:hover {
+    font-size: 18px;
+}
+li {
+    margin-top: 45px;
+    
+}
+.shoppresentation{
+    padding: 30px 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoppresentation h3{
+    font-size: 20px;
+    color: rgb(118, 106, 106);
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+.shoppresentation h1{
+    font-size: 120px;
+    letter-spacing: -16.6px;
+    margin-top: 25px;
+}
+.shoppresentation p{
+    font-size: 19px;
+    line-height: 35px;
+    color:rgb(118, 106, 106);
+    font-weight: 500;
+}
+.option {
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+#taglia, #color {
+   cursor: pointer;
+   border: none;
+   text-decoration: underline 1.2px;
+   font-size: 17px;
+   margin-top: 20px;
+   font-weight: 400;
+   text-align: center;
+   justify-content: space-between;
+   align-items: center;
+   letter-spacing: 1.3px;
+   
+}
+#taglia:hover, #color:hover {
+    text-decoration: underline yellow 2px;
+}
+#taglia {
+    margin-right: 40px;
+    margin-left: 80px;
+}
+#color {
+    margin-right: 60px;
+    margin-left: 50px;
+}
+#taglia:hover, #color:hover{
+    border: none;
+    margin: none;
+}
+#taglia:hover, #color::after{
+    border: none;
+    margin: none;
+}
+
+.foto{
+       box-sizing: content-box;
+   width: 50;
+   height: 30;
+  object-fit: contain;
+float: right;
+}
+.foto {
+    margin-top: 8px;
+}
+.opzione{
+    font-size: 6px;
+}
+.button {
+    display: inline-flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 8px;
+
+}
+.add {
+    display: flex;
+    padding: 15px;
+    border-radius: 6px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    
+}
+.add i {
+    background-color: #000;
+    color: #fff;
+    margin: 5px;
+    text-align: center;
+}
+.intro {
+    
+    padding: 18px;
+    border-radius: 6px;
+   justify-content: center;
+    font-size: 17px;
+    font-weight: 500;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.intro i {
+    margin: 5px;
+    text-align: center;
+}
+
+
+.secondpart{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin: 50px;
+
+
+
+}
+.arrivals{
+    width: 85;
+    height: 120;
+    padding: 130px;
+    background: linear-gradient(rgba(219, 207, 207, 0.5), rgba(160, 155, 155, 0.5)), url("https://media.gettyimages.com/id/154960461/it/foto/rosso-sudore-shirt-su-sfondo-bianco.jpg?s=612x612&w=0&k=20&c=Ix69zcczrTBxpXC8CMxkwWIwhghyqwMwghJh1rWK8cQ=");
+background-position: center ;
+background-size: cover;
+}
+.accessories {
+    background: linear-gradient(rgba(219,207,207,0.5), rgba(160, 155, 155, 0.5)), url("https://media.gettyimages.com/id/1335249564/it/foto/backpack-on-white-background.jpg?s=612x612&w=0&k=20&c=8vpqvP7w1fRHNoeEMZcXSQo1mumfzc_URf3-Asy20ls=");
+    width: 85;
+    height: 120;
+    padding: 130px;
+    background-position: center;
+    background-size: cover;
+
+}
+.arrivals h1{
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.accessories h1 {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.arrivals p{
+    background: transparent;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+.accessories p{
+    background:transparent;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+
+}
+.arrivals .men {
+  
+    margin: 0 10px; /* Spaziatura tra i pulsanti */
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all .3s ease;
+
+}
+.arrivals .men:hover{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.arrivals  .women {
+    margin: auto;/* Spaziatura tra i pulsanti */
+    padding: 10px 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+.arrivals .women:hover{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accessories .men{
+
+    margin: 0 10px; /* Spaziatura tra i pulsanti */
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+.accessories .men:hover{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accessories .women{
+    margin: auto;/* Spaziatura tra i pulsanti */
+    padding: 10px 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+.accessories .women:hover{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.thirdpart {
+   
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.thirdpart h1{
+    font-size: 45px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.thirdpart h4{
+    color:rgb(118, 106, 106);
+    font-size: 16px ;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.containerbutton{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+.bot {
+    padding: 10px 20px;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: rgb(238, 231, 231);
+    border: none;
+    font-weight: 400;
+}
+.bot + .bot{
+    margin-left: 10px;
+}
+.bot:hover{
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gallery-container{
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 3px #ddd;
+
+    padding: ;
+    
+    margin: 10px;
+    margin-left: 35px;
+}
+.gallery {
+    display: flex;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.gallery-item{
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.gallery-item img{
+    display: block;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    justify-content: space-between;
+
+}
+
+
+.novita .under{
+    background-color: yellow;
+    padding: 50px;
+    margin-top: 60px;
+
+    opacity: 80%;
+}    
+.under h1{
+    background-color: transparent;
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.under h2{
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+.under p{
+    background-color: transparent;
+    line-height: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+.under .scopri {
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: 60px;
+    transition: all .3s ease;
+}
+.under .scopri:hover{
+ font-size: 21px;
+}
+.ri-arrow-right-line{
+    background-color: transparent;
+    font-weight: 400;
+    width: 60;
+    cursor: pointer;
+}
+
+.galleryunder{
+ 
+    background-color: rgb(242, 242, 98);
+    width: 100%;
+    margin-top: 0;
+    border: none;
+    padding: 8px;
+
+    
+}
+.galleryunder .galleryunderitem{
+    background-color: transparent;
+    
+
+}
+.gallerycontainernovita {
+   
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+}
+.galleryunderitem{
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.galleryunderitem img{
+display: block;
+width: 200px;
+background-color: transparent;
+}
+.gallerycontainernovita::-webkit-scrollbar {
+    height: 15px;
+}
+.gallerycontainernovita::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+.lastpart{
+    background-color: rgb(142, 130, 130);
+
+    padding: 90px;
+    margin-top: 60px;
+}
+.lastpart h3{
+    background-color: transparent;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: #fff;
+    margin-right: 60px;
+    font-weight: 450;
+    padding: 0;
+}
+.lastpart h1{
+    margin-top: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 45px;
+    padding: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2.1px;
+}
+.lastpart label input{
+    padding: 14px;
+    margin-top: 20px;
+border-radius: 30px;
+border: none;
+}
+.ri-arrow-right-circle-fill{
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+
+}
+
+.input-container {
+    position: relative;
+    width: fit-content;
+    border-radius: 50px;
+   
+  }
+  
+  .input-container input {
+    padding-right: 60px; /* Aggiungi spazio per il bottone */
+    width: 300px;
+    border: none;
+    padding: 10px;
+   border-radius: 50px;
+    text-align: start;
+   outline: none;
+   
+ 
+  }
+  
+  .inside-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    outline: none;
+  }
+  .inside-button:hover{
+    border: none;
+    outline: none;
+  }
+  .inside-button::after{
+    border: none;
+    outline: none;
+  }
+  .inside-button:focus{
+    border: none;
+    outline: none;
+  }
+  .ri-arrow-right-circle-line{
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+  }
+
+ 
+ 
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colonne di larghezza uguale */
+    gap: 20px; /* Spazio tra le colonne */
+    padding: 3px;
+    background-color:transparent;
+    color: #000;
+    margin: 80px;
+  }
+  
+  .footer-col h3 {
+    margin-top: 25px;
+    font-size: 16px;
+
+  }
+  .footer-col h3:first-child{
+    font-size: 20px;
+  }
+  .footer-col p {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600px;
+    color: rgb(118, 106, 106);
+    padding: 3px;
+  }
+.footer-col li{
+    font-size: 15px;
+    line-height: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease;
+    padding: 3px;
+}
+.footer-col li:hover{
+font-size: 18px;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+   
+}
+.elemento {
+font-size: 11px;
+font-weight: 400;
+    padding: 20px;
+    background-color: transparent;
+}
